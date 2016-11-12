@@ -1,0 +1,281 @@
+/**************************************************
+Fonts:
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling:
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme:
+
+**************************************************/
+
+
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+* {
+    box-sizing: border-box;
+}
+html {
+    background: #4BB062;
+    font-family: 'Oswald', 'Droid Sans', sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0.618rem;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 1.618rem;
+}
+h2 {
+    color: #1F373D;
+    font-size: 1rem;
+}
+li,
+p,
+a {
+    color: #374C0D;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+header {
+    background-image: url("../img/placeimg_640_480_nature%20(2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #1E2E00;
+}
+nav {
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    background-color: #1E2E00;
+    color: #EDDDE1;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+}
+nav a:active,
+nav a:focus,
+nav a:hover {
+    background-color: #D0B0E4;
+}
+main {
+    overflow: hidden;
+    width: 100%;
+}
+.col {
+    color: #D0B096;
+}
+.col img {
+    width: 100%;
+    height: auto;
+    background-color: #D0B0CB;
+}
+footer {
+    color: #D0B096;
+}
+.footer ul {
+    color: #D0B042;
+}
+.footer li {
+    display: inline;
+    color: #D0B042;
+}
+.footer a:hover {
+    background-color: #D0B096;
+    color: #55CA48;
+}
+
+/* -- FIRST BREAK POINT - TABLET VIEW -- */
+
+@media screen and (min-width:600px) {
+    body {
+        font-size: 1rem
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .col {
+        width: 50%;
+        padding: 0 1rem 0 0;
+        float: left;
+    }
+    .col:last-child {
+        padding: 0;
+    }
+    .col img {
+        width: 60%;
+        max-width: 100%;
+        margin: 0 1rem;
+        float: left;
+    }
+    footer {
+        width: 90%;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+    }
+    nav li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .link a,
+    .link a:link,
+    .link a:visited {
+        font: blod 1.373rem 'Oswald', 'Droid Sans', 'more font stack stuff', sans-serif;
+    }
+}
+
+/*
+    Set the prescribed widths for listed elements below:
+    wrapper - 100%
+    header - 100%
+    nav - 90%
+    links - 20% of nav
+    main - 90%
+    columns - 50% of main
+    column image - 60% of column
+    footer - 90% */
+
+
+/* -- SECOND BREAK POINT - DESKTOP VIEW -- */
+
+@media screen and (min-width: 800px) {
+    /*
+    Set the prescribed widths for listed elements below:
+    header - 100%
+    nav - 90%
+    links - 20% of nav
+    main - 90%
+    columns - 50% of main
+    column image - 50% of column
+    footer - 100% */
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+        border: none;
+    }
+    nav li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .link a,
+    .link a:link,
+    .link a:visited {
+        font: bold 1.373rem 'Oswald', 'Droid Sans', 'more font stack stuff', sans-serif;
+        background-color: transparent;
+        color: black;
+        text-align: left;
+        padding-left: 0;
+        display: inline-block;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .col {
+        float: left;
+        width: 50%;
+    }
+    .col img {
+        max-width: 100%;
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    footer {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* -- THIRD BREAK POINT - LARGE DESKTOP VIEW -- */
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+    main {
+        width: 70%;
+        float: left;
+    }
+    nav {
+        width: 30%;
+        float: left;
+    }
+    .wrapper {
+        width: 75%;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+    .mainnav .link {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+    .col img {
+        width: 55%;
+    }
+    footer {
+        width: 70%;
+        clear: both;
+    }
+}
