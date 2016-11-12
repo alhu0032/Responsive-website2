@@ -27,6 +27,7 @@ DEFAULTS - MOBILE FIRST
 }
 html {
     background: #4BB062;
+   /* Oswald-base san-serif  stack */
     font-family: 'Oswald', 'Droid Sans', sans-serif;
 }
 body {
@@ -52,7 +53,7 @@ a {
     margin: 0 auto;
 }
 header {
-    background-image: url("../img/placeimg_640_480_nature%20(2).jpg");
+    background-image: url("placeimg_640_480_nature%20(2).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #1E2E00;
@@ -165,7 +166,7 @@ footer {
     .link a,
     .link a:link,
     .link a:visited {
-        font: blod 1.373rem 'Oswald', 'Droid Sans', 'more font stack stuff', sans-serif;
+        font: blod 1.373rem 'Merriweather', 'Droid Serif', '/*Droid-base serif stack*/', serif;
     }
 }
 
@@ -218,7 +219,8 @@ footer {
     .link a,
     .link a:link,
     .link a:visited {
-        font: bold 1.373rem 'Oswald', 'Droid Sans', 'more font stack stuff', sans-serif;
+        /*Droid-base serif stack*/
+        font: bold 1.373rem 'Merriweather', 'Droid Serif', serif;
         background-color: transparent;
         color: black;
         text-align: left;
